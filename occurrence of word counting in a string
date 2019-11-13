@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string s = "asda asdas asdasd asdasd as ksjdhfoas as asdasd asdasd dfsd fge ggh dfgsd asd asd wrg sd as dasd as as asd asd asd sa s as sa asasas as";
+    int i =0;
+    string word = "as";
+    string w="";    
+    map<string,int> m;
+    map<string,int> :: iterator it;    
+    while(s[i] != NULL)
+    {
+    	if(s[i] == ' ')
+    	{
+    		m[w]++;
+    		w="";
+    		i++;
+		}
+		else
+		{
+			w = w+s[i];
+			i++;
+		}
+	}	
+//	for(it = m.begin(); it != m.end(); it++ )
+//	{
+//		cout<<it->first<<" "<<it->second<<endl;
+//	}
+//	
+	cout<<"as "<<m[word];
+		
+}
+
